@@ -96,7 +96,7 @@
     // ADD YOUR ACCESS TOKEN FROM
     // https://account.mapbox.com
     let mapToken = "<%= process.env.MAP_TOKEN %>";
-    let coordinates = <%-JSON.stringify(listing.geometry.coordinates)%>;
+    let coordinates = "<%-JSON.stringify(listing.geometry.coordinates)%>";
 
     //console.log(mapToken);
     mapboxgl.accessToken = mapToken;
