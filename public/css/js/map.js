@@ -8,5 +8,6 @@ zoom: 9 // starting zoom
 });
 const marker = new mapboxgl.Marker({color : "red"})
 .setLngLat(listing.geometry.coordinates)
-.setPopup(new mapboxgl.Popup({offset: 25}).setHTML(`<h6>${listing.location}</h6> <p>Exact Location provided after booking</p>`))
+.setPopup(new mapboxgl.Popup({offset: 25})
+.setHTML(`<h6>${listing.location}</h6> <p>Exact Location provided after booking</p>`))
 .addTo(map);
